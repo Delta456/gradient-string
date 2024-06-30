@@ -13,7 +13,7 @@ const resetANSI = "\033[0m"
 type GradientDirection int
 
 const (
-	Horizontal = iota
+	Horizontal GradientDirection = iota
 	Vertical
 )
 
