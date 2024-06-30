@@ -8,11 +8,10 @@ import (
 )
 
 func main() {
-	b, _ := gradient.NewGradientBuilder(gradient.WithColors(lipgloss.Color("123"), lipgloss.Color("202")),
+	f, _ := gradient.NewGradientBuilder(gradient.WithColors(lipgloss.Color("#00FF00"), lipgloss.Color("#FF0000")),
 		gradient.WithDomain(0.0, 1.0)).Build()
 
-	b1, _ := gradient.NewGradientBuilder(gradient.WithColors(lipgloss.Color("253"), lipgloss.Color("129")),
-		gradient.WithDomain(0.0, 1.0)).Build()
+	b, _ := gradient.NewGradientBuilder(gradient.WithColors(lipgloss.Color("#FF0000"), lipgloss.Color("#00FF00")), gradient.WithDomain(0.0, 1.0)).Build()
 
-	fmt.Println(b1.RenderBackground(b.RenderForeground("Hello World")))
+	fmt.Println(b.RenderBackground(f.RenderForeground("This is Gradient String")))
 }
