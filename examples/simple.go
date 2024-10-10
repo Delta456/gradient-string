@@ -1,10 +1,10 @@
-package main
+package examples
 
 import (
 	"fmt"
 
 	"github.com/charmbracelet/lipgloss"
-	"github.com/delta456/gradient-strings"
+	"github.com/delta456/gradient-string"
 )
 
 func main() {
